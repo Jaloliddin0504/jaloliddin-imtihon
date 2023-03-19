@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    max-width: 100%;
+    max-width: 1100px;
+    margin:0 auto;
+}
+/* header */
+.header {
+    
+z-index: 9999;
+position: fixed;
+top: 0;
+left: 0;
+  width: 100%;
+  padding: 10px;
+  background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header__wrapper {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    
+}
+.header__logo img {
+    display:block;
+}
+.header__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 32px;
+}
+.active {
+    position: relative;
+}
+.active::before {
+    content: '';
+    position: absolute;
+    width: 94px;
+    height: 3px;
+    background: #191919;
+    left: -11px;
+    bottom: -16px;
+    
+}
+.header__list-item {
+}
+.header-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+    transition: all 0.5s ;
+}
+.header-link:hover {
+    color: #3410d6;
+}
+.btn {
+    
+    Padding: 8px 16px ;
+    background: #00BAFC;
+    border: 3px solid #00BAFC;
+    border-radius: 5px;
+    border-color:#00BAFC ;
+}
+.header-tel {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
+    transition: all 0.5s;
+}
+.btn:hover {
+    background: #FFFFFF;
+    
+}
+.header-tel:hover {
+    color: #00BAFC ;
+}
+/* End of header */
+
+/* biznes */
+.biznes {
+    
+}
+.biznes_list {
+    display: flex;
+    padding: 160px 0;
+    align-items:center;
+    gap: 172px;
+}
+.biznes_list h1{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+    color: #000000;
+}
+.biznes_list p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    padding: 16px 0;
+}
+.biznes_list a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #00BAFC;
+    border-radius: 5px;
+    Padding: 8px 16px ;
+}
+.biznes__content {
+    width: 470px;
+}
+.biznes__iframe {
+    
+}
+.biznes__iframe iframe {
+    display: block;
+}
+/* End of biznes */
+/* xizmatlar */
+.xizmatlar__h2 {
+    padding: 56px 0 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+}
+.xizmatlar__p {
+    margin-left: 190px;
+    display: flex;
+    display:inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    width: 719px;
+}
+.xizmatlar__list {
+    padding-top: 24px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+.xizmatlar__list-itim {
+    width: 320px;
+    height: 260px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.xizmatlar__list-itim h3{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+    
+}
+.xizmatlar__list-itim p {
+    display: flex;
+    justify-content: center;
+    padding: 16px 0 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+.xizmatlar__img{
+    display: flex;
+    justify-content: center;
+    padding: 24px 0 16px;
+}
+.Vebsayt__img {
+    width: 202.79px;
+    height: 130px;
+}
+.Telegram__img {
+    width: 222.13px;
+    height: 130px;
+    
+}
+.SMM__img {
+    width: 176.85px;
+    height: 130px;
+}
+.Grafik__img {
+    width: 178.91px;
+    height: 130px;
+}
+.CRM__img {
+    width: 169.22px;
+    height: 130px;
+}
+
+
+.btn__buyurtma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 40px 0 56px;
+}
+.buyurtma {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
+    
+}  
+.buyurtma:hover {
+    color:  #00BAFC;;
+}
+.saxifaga__otish {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #00BAFC;
+}
+/* End of xizmatlar */
+/* Biz qanday ishlaymiz? */
+.container {
+    max-width: 1100px;
+    margin:0 auto;
+}
+.ishlaymiz__h2 {
+    padding: 56px 0 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+}
+.ishlaymiz__p {
+    margin-left: 190px;
+    display: flex;
+    display:inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    width: 719px;
+}
+.ishlaymiz__list {
+    
+}  
+.ishlaymiz__list-itim {
+    display: flex;
+    justify-content: center;
+    padding: 48px 0;
+}
+.ishlaymiz__list-itim {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.ishlaymiz__list-item__div content{
+    width:500px;
+}
+.ishlaymiz__list-item__div img{
+    
+}
+.illlustration_1 {
+    width: 300px;
+    height: 278px;
+}
+.illlustration_2 {
+    width: 300px;
+    height: 278px;
+}
+.illlustration_3 {
+    width: 300px;
+    height: 258.9px;
+}
+.illlustration_4 {
+    width: 300px;
+    height: 171.12px;
+}
+.illlustration_5 {
+    width: 300px;
+    height: 232.2px;
+}
+.ishlaymiz__list-item__div h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+}
+.ishlaymiz__list-item__div p{
+    padding-top: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+.pad__buyurtma {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 56px;
+}
+.buyurtma{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+/* End of Biz qanday ishlaymiz?  */
+/* buyurtma berish  */
+.buyurtma__berish {
+    
+    background: #00BAFC;
+    align-items: center;
+    padding-bottom: 64px;
+    
+}
+.buyurtma__berish h3 {
+    padding: 56px 0 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.buyurtma__berish p {
+    margin-left: 190px;
+    display: flex;
+    display:inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 719px;
+    padding-bottom: 24px;
+}
+.form__elements {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+    margin: 0 auto;
+    width: 348px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    
+}
+.inpur_teg {
+    margin-top: 16px;
+    width: 300px;
+    height: 56px;
+    background: #F3F3F3;
+    border-radius: 5px;
+    padding: 16px;
+}
+.name{
+    margin-top: 24px;
+}
+.input__div{
+    display: flex;
+    justify-content: center;
+    padding: 16px 0 24px;
+}
+.input__btn {
+    background: #00BAFC;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 16px;
+    color: #FFFFFF;
+}
+/* end of buyurtma berish */
+/* footer */
+.footer__wrapper {
+    display: flex;
+    background: #191919;
+    gap: 100px;
+}
+.footer_qismlari{
+    padding: 56px 0;
+    
+}
+.footer_qismlari h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #FFFFFF;
+    padding-bottom: 16px;
+}
+.footer_qismlari p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    width: 320px;
+}
+.footer_qismlari a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    
+    color: #FFFFFF; 
+}
+.footer__list-item {
+    padding-top: 8px; 
+}
+.footer__list {
+    list-style: none;
+    
+    
+}
+.internetda {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-content: center;
+    text-decoration:none;
+}
+.navi {
+    text-decoration: none;
+    padding-bottom: 5px;
+    
+}
+/* End of footer */
+/* .xizmatlar__section */
+.xizmatlar__section {
+    align-items: center;
+}
+.xizmatlar__section h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    color: #000000;
+    padding-top: 142px;
+}
+.xizmatlar__section p{
+    text-align: center;
+    width: 800px;
+    margin-left: 150px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    padding: 16px 0 72px;
+}
+/* end of xizmatlar__section */
+
+/* sayt tuzish  */
+.container__sayttuzish {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #F4F4F4;
+}
+.container__sayt {
+    max-width: 804px;
+    margin:  auto;
+}
+.sayt__list {
+    display: flex;
+    gap: 40px;
+    margin: 32px 0;
+    background: #FFFFFF;
+    /* margin: 64px 0; */
+}
+.tepa{
+    margin-top: 80px;
+}
+.sayt__list-item_content{
+    padding: 32px  32px 32px 0;
+    width: 500px;
+}
+.sayt__list-item_img {
+    padding: 32px 0 32px 32px;
+}
+.sayt__list_item_content h3{
+    padding-top: 32px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+}
+.sayt__list_item_content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    padding: 16px 0;
+}
+.sayt__list_item_content h4{
+    padding-bottom: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    padding-left: 20px;
+}
+.active {
+    position: relative;
+}
+.active::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #00BAFC;
+    left: 0px;
+    bottom: 15px;
+}
+.Batton{
+    display: flex;
+    margin-bottom: 32px;
+    padding-top: 8px 32px;
+    gap:16px;
+    align-content: center;
+    align-items: center;
+}
+.btn_Buyurtma {
+    text-decoration: none;
+    padding: 8px 32px;
+    
+    border: 2px solid;  
+    background: #00BAFC;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.btn__malumot {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #00BAFC;
+}
+.Vebsayt__img2 {
+    width: 200px;
+    height: 128.21px;
+}
+.Telegram__img2 {
+    width: 200px;
+    height: 117.05px;
+    
+}
+.SMM__img2 {
+    width: 200px;
+    height: 147.01px;
+}
+.Grafik__img2 {
+    width: 200px;
+    height: 145.33px;
+}
+.CRM__img2
+{
+    width: 200px;
+    height: 153.65px;  
+}
